@@ -56,7 +56,13 @@
 			<section class="herro-content">
 				<div class="container">
 					<h1 class="herro-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="herro-bth">Заказать услугу</button>
+					<button type="button" class="herro-bth" data-modal-open >Заказать услугу</button>
+					<div  class="backdrop is-hidden" data-modal>
+						<p class="modal"><span>modal window</span>
+						<button class="close" data-modal-close ><svg width="18" height="18" class="svg-close" >
+								<use href="./images/icons.svg#close"></use>
+							</svg></button></p>
+					</div>
 				</div>
 			</section>
 			<section class="advantages section">
@@ -319,5 +325,6 @@
 				</section>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
